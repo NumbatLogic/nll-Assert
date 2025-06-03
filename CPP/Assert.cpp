@@ -1,8 +1,6 @@
 #include "Assert.hpp"
 
-#if defined(CLANG_PARSE)
-
-#elif defined(_MSC_VER)
+#if defined(_MSC_VER)
 	#include <stdio.h>
 	#include <Windows.h>
 #elif defined(CMAKE_PLATFORM_ANDROID)
@@ -20,8 +18,7 @@ namespace NumbatLogic
 	{
 		if (!bTest)
 		{
-			#if defined(CLANG_PARSE)
-			#elif defined(_MSC_VER)
+			#if defined(_MSC_VER)
 				printf("Assert: %s (%d) : %s\n", sxFile, nLine, sxAssert);
 				DebugBreak();
 			#elif defined(CMAKE_PLATFORM_ANDROID)
@@ -39,8 +36,7 @@ namespace NumbatLogic
 	{
 		if (!bTest)
 		{
-			#if defined(CLANG_PARSE)
-			#elif defined(_MSC_VER)
+			#if defined(_MSC_VER)
 				//printf("Assert: %s (%d) : %s\n", szFile, nLine, szAssert);
 				DebugBreak();
 			#elif defined(CMAKE_PLATFORM_ANDROID)
