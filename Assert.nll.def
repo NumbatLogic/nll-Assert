@@ -1,11 +1,7 @@
-namespace NumberDuck
+namespace NumbatLogic
 {
-	namespace Secret
+	class nbAssert
 	{
-		class nbAssert
-		{
-			//public static void Assert(bool result, string test, string file, int line);
-			public static void Assert(bool result);
-		}
+		public static void Assert(bool result);
 	}
 }
