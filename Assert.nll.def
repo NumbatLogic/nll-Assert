@@ -1,6 +1,6 @@
 namespace NumbatLogic
 {
-	class nbAssert
+	class Assert
 	{
 		public static void Assert(bool result);
 	}
