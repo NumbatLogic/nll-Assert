@@ -14,7 +14,7 @@
 
 namespace NumbatLogic
 {
-	void Assert::Assert(bool bTest, const char* sxAssert, const char* sxFile, int nLine)
+	void Assert::Plz(bool bTest, const char* sxAssert, const char* sxFile, int nLine)
 	{
 		if (!bTest)
 		{
@@ -32,7 +32,7 @@ namespace NumbatLogic
 		}
 	}
 
-	void Assert::Assert(bool bTest)
+	void Assert::Plz(bool bTest)
 	{
 		if (!bTest)
 		{
